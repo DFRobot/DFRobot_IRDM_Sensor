@@ -1,0 +1,23 @@
+#######################################
+# Syntax Coloring Map For Grove - Distance Measuring Sensor Unit
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+DFRobot_IRDM_Sensor	KEYWORD1
+
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################	
+
+
+getDistance	           KEYWORD2
+Distance               KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
