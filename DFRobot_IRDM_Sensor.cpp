@@ -19,12 +19,12 @@
 float DFRobot_IRDM_Sensor::getSensorValue(){
   float  minNum, maxNum, meanN, t;
   static float arr[7] = {0};
-  uint16_t i=0,sensorValue, flagMin, flagMax;
+  uint16_t i=0,sensorValue, flagMin=0, flagMax=0;
   while(i<7){
     sensorValue = analogRead(_pin);   
     if(sensorValue>=240&&sensorValue<=512){
-       arr[i]=sensorValue;
-       i++;
+      arr[i]=sensorValue;
+      i++;
     }
   }
   maxNum=arr[0];
@@ -51,14 +51,14 @@ float DFRobot_IRDM_Sensor::getSensorValue(){
 
 float DFRobot_IRDM_Sensor::getDistance(){
   uint8_t i;
-  float distance,SensorValue;
+  float distance=0,SensorValue=0;
   for(i=0;i<40;i++){
     SensorValue=getSensorValue();
     if(SensorValue>313.8){
-    distance+=28900/(SensorValue-218.0);
+      distance+=28900/(SensorValue-218.0);
     }
     else{
-    distance+=28800/(SensorValue-217.5);
+      distance+=28800/(SensorValue-217.5);
     }
   }
   distance/=40;
