@@ -6,7 +6,7 @@ GP2Y0A710K是夏普红外距离传感器家族成员之一，此型号可提供�
 ![产品效果图片](./resources/images/SEN0085.png)
 
 
-## 产品链接（链接到中文商城）
+## 产品链接（https://www.dfrobot.com.cn/goods-339.html）
 
     SKU：SEN0085
 
