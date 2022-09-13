@@ -5,28 +5,29 @@ GP2Y0A710K是夏普红外距离传感器家族成员之一，此型号可提供�
 
 ![产品效果图片](./resources/images/SEN0085.png)
 
-## Product Link (Link to DFRobot store)
+
+## 产品链接（链接到中文商城）
 
     SKU：SEN0085
 
-## Table of Contents
+## 目录
 
-  * [Summary](#summary)
-  * [Installation](#installation)
-  * [Methods](#methods)
-  * [Compatibility](#compatibility)
-  * [History](#history)
-  * [Credits](#credits)
+  * [概述](#概述)
+  * [库安装](#库安装)
+  * [方法](#方法)
+  * [兼容性](#兼容性)
+  * [历史](#历史)
+  * [创作者](#创作者)
 
-## Summary
+## 概述
 
 这个库用来获取障碍物到传感器探头的距离。
 
-## Installation
+## 库安装
 
-To use this library, first download the library file, paste it into the \Arduino\libraries directory, then open the examples folder and run the demo in the folder.
+使用此库前，请首先下载库文件，将其粘贴到\Arduino\libraries目录中，然后打开examples文件夹并在该文件夹中运行演示。
 
-## Methods
+## 方法
 
 ```C++
   /**
@@ -44,7 +45,7 @@ To use this library, first download the library file, paste it into the \Arduino
   float getDistance(void);
 ```
 
-## Compatibility
+## 兼容性
 
 主板               | 通过  | 未通过   | 未测试   | 备注
 ------------------ | :----------: | :----------: | :---------: | -----
@@ -55,13 +56,14 @@ ESP32           |      √       |              |             |
 ESP8266           |      √       |              |             | 
 micro:bit        |      √       |              |             | 
 
-## History
 
-- 2022/09/03 - Version 1.0.0 released.
+## 历史
 
-## Credits
+- 2021/09/30 - 1.0.1 版本
 
-Written by PengKaixing(kaixing@dfrobot.com), 2019. (Welcome to our [website](https://www.dfrobot.com/))
+## 创作者
+
+Written by PengKaixing(kaixing.peng@dfrobot.com), 2019. (Welcome to our [website](https://www.dfrobot.com/))
 
 
 

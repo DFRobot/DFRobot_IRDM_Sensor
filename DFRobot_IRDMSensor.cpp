@@ -1,22 +1,19 @@
 /*!
- * @file DFRobot_IRDM_Sensor.cpp
- * @brief DFRobot's Infrared Sensor
- * @n Distance Measuring Sensor Unit
- *
- * @copyright	[DFRobot](http://www.dfrobot.com), 2017
- * @copyright	GNU Lesser General Public License
- *
- * @author [Zhangjiawei]
- * @version  V1.0
- * @date  2017-6-22
- */
-
-#include <Wire.h>
-#include <Arduino.h>
-#include <DFRobot_IRDM_Sensor.h>
+  * @file DFRobot_IRDMSensor.cpp
+  * @brief DFRobot's Infrared Sensor
+  * @n Distance Measuring Sensor Unit 
+  * @copyright   Copyright (c) 2010 DFRobot Co.Ltd (http://www.dfrobot.com)
+  * @license     The MIT License (MIT)
+  * @author      [PengKaixing]kaixing.peng@dfrobot.com)
+  * @version  V1.0.0
+  * @date  2022-9-3
+  * @url https://github.com/DFRobot/DFRobot_IRDMSensor
+  */
+#include <DFRobot_IRDMSensor.h>
 
 
-float DFRobot_IRDM_Sensor::getSensorValue(){
+float DFRobot_IRDMSensor::getSensorValue(void)
+{
   float  minNum, maxNum, meanN, t;
   static float arr[7] = {0};
   uint16_t i=0,sensorValue, flagMin=0, flagMax=0;
@@ -49,7 +46,8 @@ float DFRobot_IRDM_Sensor::getSensorValue(){
   return meanN;
 }
 
-float DFRobot_IRDM_Sensor::getDistance(){
+float DFRobot_IRDMSensor::getDistance(void)
+{
   uint8_t i;
   float distance=0,SensorValue=0;
   for(i=0;i<40;i++){
